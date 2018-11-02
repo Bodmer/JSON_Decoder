@@ -23,9 +23,14 @@ SOFTWARE.
 
 See more at http://blog.squix.ch and https://github.com/squix78/json-streaming-parser
 
-Updated by Bodmer: https://github.com/Bodmer/JSON_Decoder
-
 */
+
+// altrunner forker and refactored to use char arrays and add error reporting:
+// https://github.com/altrunner/json-streaming-parser
+
+// altrunner version of library forked and name changed by Bodmer to avoid IDE
+// name conflicts with Arduino IDE Library manager version:
+// https://github.com/Bodmer/JSON_Decoder
 
 #pragma once
 
@@ -42,7 +47,7 @@ class JsonListener {
 
     virtual ~JsonListener() {}
 
-
+    // Member functions changed to a more logical order
     virtual void startDocument();
 
     virtual void endDocument();
@@ -61,6 +66,7 @@ class JsonListener {
     virtual void key(const char *key);
 
     virtual void value(const char *value);
+
 
     virtual void whitespace(char c);
 

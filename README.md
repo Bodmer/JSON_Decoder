@@ -4,7 +4,7 @@ This is a fork of altrunner's variant of Daniel Eichhorn's library. altrunner co
 
 This fork here has been renamed JSON_Decoder to avoid conflicts in the Arduino IDE with Daniel's original "json-streaming-parser" library. Thus the two libraries can happily co-exist. The example sketch has been corrected to work with an update that added error reporting in altrunners fork.
 
-The first use of this library required some "reverse engineering" to understand how to use the parser. The plan is to add a better example (based on my slow learning experience) that shows how to use the parser.
+The first use of this library required some "reverse engineering" to understand how to use the parser. The plan is to add a further example (based on my slow learning experience) that shows how to use the parser.
 
 The original ReadMe is below.
 

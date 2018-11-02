@@ -279,6 +279,7 @@ bool JSON_Decoder::parse(char c) {
 		}
 		break;
 	case STATE_START_DOCUMENT: {
+		if (c != '{') return false; // To wait for start character
 		myListener->startDocument();
 		if (c == '[') {
 			startArray();
