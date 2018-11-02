@@ -22,7 +22,7 @@
 // in this it is attached in the ISS_API_Class tabs of this sketch.
 
 // Request every 5 minutes for demonstration only, ISS pass times are not updated often
-const int UPDATE_INTERVAL_SECS = 5 * 60UL; // 15 minutes
+const int UPDATE_INTERVAL_SECS = 5 * 60UL; // 5 minutes
 
 // >>>>>>>>>>>>  Change to suit your WiFi router  <<<<<<<<<<<< NOTE
 #define WIFI_SSID "Your_SSID"
