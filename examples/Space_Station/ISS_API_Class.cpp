@@ -41,7 +41,7 @@ void SpaceStation::getPasses(String latitude, String longitude, ISS_pass* passDa
   Serial.println("=====>   Header start   <=====");
 
   // Read the header that precedes the JSON, ends with \r\n
-  while (client.connected())
+  while ( client.available() > 0 || client.connected())
   {
     String line = client.readStringUntil('\n');
     if (line == "\r") {
