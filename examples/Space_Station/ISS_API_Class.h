@@ -56,14 +56,14 @@ class SpaceStation: public JsonListener {
 
     bool     ended = true;  // Flag to indicate document has ended
 
-    String   currentParent; // Current object e.g. "daily"
+    String   currentParent; // Current object e.g. "request"
 
     String   currentKey;    // Name key of the name:value pair e.g "temperature"
 
-    uint16_t arrayIndex;    // Array index e.g. 5 for day 5 forecast, qualify with arrayPath
+    uint16_t arrayIndex;    // Array index 0-N e.g. 4 for 5th pass, qualify with valuePath
 
     String   valuePath;     // object (i.e. sequential key) path (like a "file path")
-                            // taken to the name:value pair in the form "hourly/data"
+                            // taken to the name:value pair in the form "/response"
                             // so values can be pulled from the correct array.
                             // Needed since different objects contain "data" arrays.
 

@@ -1,7 +1,7 @@
 {
   "name": "JSON_Decoder",
-  "keywords": "json, streaming, parser",
-  "description": "A very memory efficient library to parse (large) JSON objects on embedded devices",
+  "keywords": "json, streaming, parser, decoder",
+  "description": "A memory efficient library to parse (large) JSON objects",
   "repository": {
     "type": "git",
     "url": "https://github.com/Bodmer/JSON_Decoder"
@@ -19,7 +19,7 @@
     "name": "Origingal v1.0.5: Daniel Eichhorn",
     "url": "http://blog.squix.ch"
   },
-  "version": "0.0.6",
+  "version": "0.0.7",
   "frameworks": "arduino",
   "platforms": "*"
 }

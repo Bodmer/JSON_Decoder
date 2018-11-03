@@ -1,7 +1,7 @@
 // This is an example sketch for the JSON_Decoder library:
 // https://github.com/Bodmer/JSON_Decoder
 
-// It connects to a website, requests a list International Space Station passes that might
+// It connects to a website, requests a list of International Space Station passes that might
 // be visible, decodes (parses) the returned JSON message and prints the results to the
 // serial monitor window.
 
@@ -15,11 +15,11 @@
 // Click the following link to fetch an example JSON message and see it in a browser:
 // http://api.open-notify.org/iss-pass.json?lat=27.9881&lon=86.9250
 
-// An alternative ISS pass time API website is her is you wish to adap the sketch:
+// An alternative ISS pass time API website is here is you wish to adapt the sketch:
 // https://wheretheiss.at/w/developer
 
 // To support the example a C++ class is used, this could be in a library of it's own but
-// in this it is attached in the ISS_API_Class tabs of this sketch.
+// it is attached in the ISS_API_Class tabs of this sketch.
 
 // Request every 5 minutes for demonstration only, ISS pass times are not updated often
 const int UPDATE_INTERVAL_SECS = 5 * 60UL; // 5 minutes
@@ -112,7 +112,7 @@ void getPassTimes(String latitude, String longitude)
   Serial.print(millis()-dt);
   Serial.println(" ms\n");
 
-  // Print pass detailed while struct still exists
+  // Print pass details while struct still exists
   printPasses(pass_data);
 
   // Delete the struct to recover the memory used

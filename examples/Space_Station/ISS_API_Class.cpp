@@ -38,7 +38,7 @@ void SpaceStation::getPasses(String latitude, String longitude, ISS_pass* passDa
   char c = 0;
   uint16_t ccount = 0;
 
-Serial.println("=====>   Header start   <=====");
+  Serial.println("=====>   Header start   <=====");
 
   // Read the header that precedes the JSON, ends with \r\n
   while (client.connected())
@@ -73,11 +73,11 @@ Serial.println("=====>   Header start   <=====");
     {
       c = client.read(); // Read a received character
 
-      #ifdef SHOW_JSON // Optionally show the message with a simple formatter
+      #ifdef SHOW_JSON   // Optionally show the message with a simple formatter
       Serial.print(c);
       #endif
 
-      json.parse(c);   // Pass to the parser, parser will call listener support functions as needed
+      json.parse(c);     // Pass to the parser, parser will call listener support functions as needed
 
       // Check for timeout
       if ((millis() - timeout) > 8000UL)
