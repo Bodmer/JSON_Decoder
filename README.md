@@ -11,7 +11,9 @@ The SpaceStation example has been added to show how to fetch and decode the JSON
 The streaming parser is very efficient on memory use compared to the Arduino JSON library because space only needs to be reserved temporarily to store the elements from the message that you need, for example the Arduino library required 55kbytes of RAM to decode a 28kbyte JSON message which made it unusable on an ESP8266.  The price paid for this memory efficiency is that you must write the code to pull out the values you need. The SpaceStation example includes links so you can see the JSON message that is being parsed in your web browser.
 
 The following Weather forecast libraries use this JSON_Decoder version of the streaming parser:
+
 https://github.com/Bodmer/ApixuWeather
+
 https://github.com/Bodmer/DarkSkyWeather
 
 This library is based on all the hard work by Daniel Eichhorn: https://github.com/squix78
