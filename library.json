@@ -1,24 +1,21 @@
 {
   "name": "JSON_Decoder",
+  "version": "1.4.4",
   "keywords": "json, streaming, parser, decoder",
   "description": "A memory efficient library to parse (large) JSON objects",
-  "repository": {
+  "repository":
+  {
     "type": "git",
     "url": "https://github.com/Bodmer/JSON_Decoder"
   },
-  "authors": {
-    "name": "Bodmer",
-    "email": "bodmer@anola.net",
-    "maintainer": true
-  },
-  {
-    "name": "altrunner",
-    "url": "https://github.com/altrunner/json-streaming-parser"
-  },
-  {
-    "name": "Origingal v1.0.5: Daniel Eichhorn",
-    "url": "http://blog.squix.ch"
-  },
+  "authors":
+  [
+    {
+      "name": "Daniel Eichhorn, altrunner, Bodmer",
+      "email": "bodmer@anola.net",
+      "maintainer": true
+    }
+  ],
   "version": "0.0.7",
   "frameworks": "arduino",
   "platforms": "*"
