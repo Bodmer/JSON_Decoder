@@ -25,6 +25,11 @@
 
 #include "JSON_Decoder.h"
 
+#ifdef ARDUINO_ARCH_MBED
+  // Avoid errors with RP2040 Nano Connect
+  #define sprintf_P sprintf
+#endif
+
 #ifdef USE_LONG_ERRORS
 const char PROGMEM_ERR0[] PROGMEM = "Unescaped control character encountered: %c at position: %d";
 const char PROGMEM_ERR1[] PROGMEM = "Start of string expected for object key. Instead got: %c at position: %d";
