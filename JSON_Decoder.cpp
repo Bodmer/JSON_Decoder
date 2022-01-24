@@ -25,7 +25,7 @@
 
 #include "JSON_Decoder.h"
 
-#ifdef ARDUINO_ARCH_MBED
+#if defined(ARDUINO_ARCH_MBED) || defined(ARDUINO_ARCH_RP2040)
   // Avoid errors with RP2040 Nano Connect
   #define sprintf_P sprintf
 #endif
