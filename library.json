@@ -19,7 +19,7 @@
     "name": "Origingal v1.0.5: Daniel Eichhorn",
     "url": "http://blog.squix.ch"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "frameworks": "arduino",
   "platforms": "*"
 }

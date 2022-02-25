@@ -29,13 +29,13 @@
   void JsonListener::endArray() {};
 
   // Current key
-  void JsonListener::key(const char *key) {};
+  void JsonListener::key(const char *key) { key = key;};
 
   // Value associated with current key
-  void JsonListener::value(const char *value) {};
+  void JsonListener::value(const char *value) {value = value;};
 
   // Called when whitespace characters detected in stream
-  void JsonListener::whitespace(char c) {};
+  void JsonListener::whitespace(char c) {c = c;};
 
   // Called when an error occurs during parsing - typically indicates bad JSON
-  void JsonListener::error( const char *message ) {};
+  void JsonListener::error( const char *message ) {message = message;};
