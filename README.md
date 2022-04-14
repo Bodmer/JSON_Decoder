@@ -1,6 +1,6 @@
 # JSON_Decoder
 
-This is a fork of altrunner's variant of Daniel Eichhorn's library. altrunner converted the library to use char arrays instread of the String class. The update has the potential to reduce the parser memory footprint during decoding and I like the error reporting added in altrunner's variant.
+This is a fork of altrunner's variant of Daniel Eichhorn's library. altrunner converted the library to use char arrays instead of the String class. The update has the potential to reduce the parser memory footprint during decoding and I like the error reporting added in altrunner's variant.
 
 This fork here has been renamed JSON_Decoder to avoid conflicts in the Arduino IDE with Daniel's original "json-streaming-parser" library:
 
