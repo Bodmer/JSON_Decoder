@@ -12,12 +12,13 @@
     "name": "Bodmer",
     "email": "bodmer@anola.net",
     "maintainer": true
+    },
+
+    {
+      "name": "altrunner",
+      "url": "https://github.com/altrunner/json-streaming-parser"
     }
   ],
-  {
-    "name": "altrunner",
-    "url": "https://github.com/altrunner/json-streaming-parser"
-  },
   {
     "name": "Origingal v1.0.5: Daniel Eichhorn",
     "url": "http://blog.squix.ch"
