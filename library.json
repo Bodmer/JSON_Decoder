@@ -12,11 +12,6 @@
     "name": "Bodmer",
     "email": "bodmer@anola.net",
     "maintainer": true
-    },
-
-    {
-      "name": "altrunner",
-      "url": "https://github.com/altrunner/json-streaming-parser"
     }
   ],
   {
